@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "InstaCollectionViewCell.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    
+    
+    return 1;
 }
 
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    InstaCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"InstagramCell" forIndexPath:indexPath];
+    
+    
+    
+    return cell;
+    
+}
+-(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+
+
+}
 @end

@@ -14,6 +14,7 @@
 		52352F8319F95E2600B066D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52352F8219F95E2600B066D3 /* Images.xcassets */; };
 		52352F8619F95E2600B066D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52352F8419F95E2600B066D3 /* LaunchScreen.xib */; };
 		52352F9219F95E2600B066D3 /* InstaKiloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52352F9119F95E2600B066D3 /* InstaKiloTests.m */; };
+		52352F9D19F960A900B066D3 /* InstaCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52352F9C19F960A900B066D3 /* InstaCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		52352F8B19F95E2600B066D3 /* InstaKiloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaKiloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52352F9019F95E2600B066D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52352F9119F95E2600B066D3 /* InstaKiloTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaKiloTests.m; sourceTree = "<group>"; };
+		52352F9B19F960A900B066D3 /* InstaCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstaCollectionViewCell.h; sourceTree = "<group>"; };
+		52352F9C19F960A900B066D3 /* InstaCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstaCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				52352F7C19F95E2600B066D3 /* ViewController.h */,
 				52352F7D19F95E2600B066D3 /* ViewController.m */,
 				52352F7F19F95E2600B066D3 /* Main.storyboard */,
+				52352F9B19F960A900B066D3 /* InstaCollectionViewCell.h */,
+				52352F9C19F960A900B066D3 /* InstaCollectionViewCell.m */,
 				52352F8219F95E2600B066D3 /* Images.xcassets */,
 				52352F8419F95E2600B066D3 /* LaunchScreen.xib */,
 				52352F7519F95E2600B066D3 /* Supporting Files */,
@@ -221,6 +226,7 @@
 			files = (
 				52352F7E19F95E2600B066D3 /* ViewController.m in Sources */,
 				52352F7B19F95E2600B066D3 /* AppDelegate.m in Sources */,
+				52352F9D19F960A900B066D3 /* InstaCollectionViewCell.m in Sources */,
 				52352F7819F95E2600B066D3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
