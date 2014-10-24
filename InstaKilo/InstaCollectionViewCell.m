@@ -22,8 +22,6 @@
 
 -(void)tapGesture:(UITapGestureRecognizer *)sender {
 
-
-        NSLog(@"Double tapped!");
         [self.delegate deletePhoto:self];
     
 }

@@ -30,7 +30,7 @@
 
     self.collectionCell.subjectList = [[NSMutableArray alloc] initWithArray:@[@"apple", @"programming"]];
     
-    [self getPhotosForHashtag:@"apple"];
+    [self getPhotosForHashtag:@"dragonboat"];
     [self getPhotosForHashtag:@"programming"];
 }
 
@@ -42,7 +42,7 @@
       parameters:nil
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
              
-             if ([hashtag isEqualToString:@"apple"]) {
+             if ([hashtag isEqualToString:@"onewest"]) {
                  photosList = [responseObject objectForKey:@"data"];
              }
              else if ([hashtag isEqualToString:@"programming"]) {
@@ -73,7 +73,7 @@
     
     if (indexPath.section == 0) {
     
-    photo = [photosList objectAtIndex:indexPath.row];
+        photo = [photosList objectAtIndex:indexPath.row];
         
     } else if (indexPath.section == 1){
         
@@ -126,8 +126,9 @@
     NSIndexPath *indexPath = [[NSIndexPath alloc] init];
     indexPath = [self.collectionView indexPathForCell:cell];
     
-    
+
     [self.collectionView deleteItemsAtIndexPaths:[NSArray arrayWithObject:indexPath]];
+
     
     [self.collectionView reloadData];
     
