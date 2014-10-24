@@ -8,10 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InstaCollectionViewCell : UICollectionViewCell
+@class InstaCollectionViewCell;
+
+@protocol InstaCollectionViewCellDelegate <NSObject>
+
+-(void)deletePhoto:(InstaCollectionViewCell *)cell;
+
+@end
 
 
-@property (nonatomic, strong) NSString *subject;
+@interface InstaCollectionViewCell : UICollectionViewCell <UIGestureRecognizerDelegate>
+
+@property (nonatomic, weak) id<InstaCollectionViewCellDelegate> delegate;
+@property (nonatomic, strong) NSMutableArray *subjectList;
+@property (nonatomic, strong) NSString *subjectName;
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
 
 @end

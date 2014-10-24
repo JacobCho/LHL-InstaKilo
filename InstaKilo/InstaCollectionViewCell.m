@@ -10,4 +10,22 @@
 
 @implementation InstaCollectionViewCell
 
+-(void)awakeFromNib {
+    
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
+    tapRecognizer.delegate = self;
+    [tapRecognizer setNumberOfTapsRequired:2];
+    [self addGestureRecognizer:tapRecognizer];
+  
+}
+
+
+-(void)tapGesture:(UITapGestureRecognizer *)sender {
+
+
+        NSLog(@"Double tapped!");
+        [self.delegate deletePhoto:self];
+    
+}
+
 @end
